@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Application Form</title>
+</head>
+<body>
+<h2>Student Application Form</h2>
+<form action="/submit-application" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" placeholder="Izmo Buen" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" value="user@example.com" readonly><br><br>
+      <label for="age">Age:</label><br>
+      <input type="number" id="age" name="age" placeholder="16"><br><br>
+      </fieldset>
+      <fieldset>
+          <legend>Application Details</legend>
+          <label for="program">Select Strand:</label><br>
+          <select id="program" name="program">
+              <option value="tvl">TVL</option>
+              <option value="stem">STEM</option>
+              <option value="humss">HUMSS</option>
+              </select><br><br>
+              <label for="answer">Tell us why you're interested</label><br>
+              <textarea id="answer" name="answer" rows="5" cols="40" placeholder="Write your answer here..."></textarea><br><br>
+              <label for="status">Application Status:</label><br>
+              <input type="text" id="status" value="Pending Review" disabled><br><br>
+              </fieldset>
+              <button type="submit">Submit Application</button>
+              </form>
+              </body>
+              </html>
